@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+
+    <link rel="stylesheet" href="./page.css">
+</head>
+
+<body class="text-center">
+
+    <div id="wrapper">
+        <h1>Get your personalized movie recommendation</h1>
+        <p>Take this movie rating questionnaire to find out!</p>
+
+        <form id="quiz">
+            <label for="name"> Your name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="phone"> Your phone:</label><br>
+            <input type="text" id="phone" name="phone">
+            <!-- Movie 1 id 1-->
+            <h2>How do you like 'Dinosaur Planet'?</h2>
+            <label><input type="radio" name="q1" value="c1">
+                Really love it! (&#9734 &#9734 &#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q1" value="c2">
+                Like it! (&#9734 &#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q1" value="c3">
+                I think it's okay. (&#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q1" value="c4">
+                Not really my type. (&#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q1" value="c5">
+                I don't like it :( (&#9734)
+            </label><br />
+
+            <!-- Movie 2 id 24-->
+            <h2>How do you like 'My Bloody Valentine'?</h2>
+            <!-- Here are the choices for the second question. Notice how each input tag has the same name (q2), but a different name than the previous question. -->
+            <label><input type="radio" name="q2" value="c1">
+                Really love it! (&#9734 &#9734 &#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q2" value="c2">
+                Like it! (&#9734 &#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q2" value="c3">
+                I think it's okay. (&#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q2" value="c4">
+                Not really my type. (&#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q2" value="c5">
+                I don't like it :( (&#9734)
+            </label><br />
+
+            <!-- Movie 3 id 12 -->
+            <h2>How do you like 'My Favorite Brunette'?</h2>
+            <!-- Choices for the third question -->
+            <label><input type="radio" name="q3" value="c1">
+                Really love it! (&#9734 &#9734 &#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q3" value="c2">
+                Like it! (&#9734 &#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q3" value="c3">
+                I think it's okay. (&#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q3" value="c4">
+                Not really my type. (&#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q3" value="c5">
+                I don't like it :( (&#9734)
+            </label><br />
+
+
+            <!-- Movie 4 id 10 -->
+            <h2>How do you like 'Fighter'</h2>
+            <!-- Choices for the fourth question -->
+            <label><input type="radio" name="q4" value="c1">
+                Really love it! (&#9734 &#9734 &#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q4" value="c2">
+                Like it! (&#9734 &#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q4" value="c3">
+                I think it's okay. (&#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q4" value="c4">
+                Not really my type. (&#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q4" value="c5">
+                I don't like it :( (&#9734)
+            </label><br />
+
+            <!-- Movie 5 id 18 -->
+            <h2>How do you like 'Immortal Beloved'</h2>
+            <!-- Choices for the fourth question -->
+            <label><input type="radio" name="q5" value="c1">
+                Really love it! (&#9734 &#9734 &#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q5" value="c2">
+                Like it! (&#9734 &#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q5" value="c3">
+                I think it's okay. (&#9734 &#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q5" value="c4">
+                Not really my type. (&#9734 &#9734)
+            </label><br />
+            <label><input type="radio" name="q5" value="c5">
+                I don't like it :( (&#9734)
+            </label><br />
+
+            <button class="btn btn-lg btn-primary btn-block" type="button" id="submit">Submit</button>
+            <!-- <button type="submit" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button> -->
+            <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+        </form>
+
+
+        <div id="answer">Your result will be sent via text message to your phone XD</div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
+
+
+    <!-- For api gateway:  -->
+    <script type="text/javascript" src="./apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="./apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="./apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="./apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="./apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="./apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="./apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="./apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="./apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="./apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+    <script type="text/javascript" src="./apiGateway-js-sdk/apigClient.js"></script>
+
+    <!-- For js script:  -->
+    <script src="./function.js"></script>
+
+   
+
+
+</body>
+
+</html>
